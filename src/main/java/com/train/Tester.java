@@ -9,7 +9,6 @@ public class Tester {
         int tickets = scanner.nextInt();
         System.out.print("How many round-trip tickets:\n");
         int roundtickets = scanner.nextInt();
-        Train tra = new Train(tickets,roundtickets);
-        tra.print();
+        System.out.println("Total tickets:"+(tickets+roundtickets)+"\n"+"Round-trip:"+roundtickets+"\n"+"Total:"+(int)((tickets*1000)+(roundtickets*2000*0.9)));
     }
 }
